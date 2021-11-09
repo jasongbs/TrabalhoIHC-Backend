@@ -1,0 +1,10 @@
+{
+    "env": {
+        "MYSQL_USER":"Backend",
+        "MYSQL_PASSWORD":"acesso@api",
+        "MYSQL_USER_DATABASE":"sistemas_jjgk",
+        "MYSQL_HOST":"localhost",
+        "MYSQL_DIALECT":"mysql",
+        "JWT_KEY" : "segredo"
+    }
+}
