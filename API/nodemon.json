@@ -1,7 +1,7 @@
 {
     "env": {
-        "MYSQL_USER":"Backend",
-        "MYSQL_PASSWORD":"acesso@api",
+        "MYSQL_USER":"backend",
+        "MYSQL_PASSWORD":"1234",
         "MYSQL_USER_DATABASE":"sistemas_jjgk",
         "MYSQL_HOST":"localhost",
         "MYSQL_DIALECT":"mysql",
