@@ -17,15 +17,7 @@ const Usuario = con.define('usuarios',
         type: Sequelize.STRING,
         allowNull: true
     },
-    tipo:{
-        type: Sequelize.STRING,
-        allowNull: true
-    },
     status:{
-        type: Sequelize.STRING,
-        allowNull: true
-    },
-    email:{
         type: Sequelize.STRING,
         allowNull: true
     }

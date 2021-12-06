@@ -31,7 +31,7 @@ app.use('/usuarios', rotaUsuarios);
 app.use('/produtos', rotaProdutos);
 app.use('/clientes', rotaClientes);
 app.use('/orcamentos', rotaOrc);
-app.use('/faturamentos', rotaFatu);
+app.use('/faturamento', rotaFatu);
 
 // Tratamento de erros 
 app.use((req, res, next) => {

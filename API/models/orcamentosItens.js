@@ -1,30 +1,22 @@
 const Sequelize = require('sequelize');
 const con = require('../config/db').sequelize;
 
-const orcamentos = con.define('orcamentos',
+const orcamentos = con.define('orcamentosItens',
 {
     id:{
         type: Sequelize.INTEGER,
         autoIncrement:true,
         primaryKey: true
     },
-    descricao:{
+    id_orcamento:{
         type: Sequelize.STRING,
         allowNull: true
     },
-    valor:{
+    id_produto:{
         type: Sequelize.STRING,
         allowNull: true
     },
-    id_cliente:{
-        type: Sequelize.STRING,
-        allowNull: true
-    },
-    data_solicitacao:{
-        type: Sequelize.STRING,
-        allowNull: true
-    },
-    data_fechamento:{
+    qtd:{
         type: Sequelize.STRING,
         allowNull: true
     },

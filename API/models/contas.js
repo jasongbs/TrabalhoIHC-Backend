@@ -1,14 +1,18 @@
 const Sequelize = require('sequelize');
 const con = require('../config/db').sequelize;
 
-const orcamentos = con.define('orcamentos',
+const produtos = con.define('contas',
 {
     id:{
         type: Sequelize.INTEGER,
         autoIncrement:true,
         primaryKey: true
     },
-    descricao:{
+    tipo:{
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    categoria:{
         type: Sequelize.STRING,
         allowNull: true
     },
@@ -16,24 +20,20 @@ const orcamentos = con.define('orcamentos',
         type: Sequelize.STRING,
         allowNull: true
     },
-    id_cliente:{
+    parcelas:{
         type: Sequelize.STRING,
         allowNull: true
     },
-    data_solicitacao:{
+    vencimento:{//ativo, desativado, 
         type: Sequelize.STRING,
         allowNull: true
     },
-    data_fechamento:{
-        type: Sequelize.STRING,
-        allowNull: true
-    },
-    status:{//ativo, desativado, 
+    status:{
         type: Sequelize.STRING,
         allowNull: true
     }
 });
 
-orcamentos.sync({alter: "true"});
+produtos.sync({alter: "true"});
 
-module.exports = orcamentos;
+module.exports = produtos;
